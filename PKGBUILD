@@ -34,7 +34,7 @@ package() {
   mv $srcdir/package.json $pkgdir/var/lib/shinken/inventory/$_moddir
   mkdir -p $pkgdir/etc/shinken/modules/
   mv $srcdir/etc/modules/* $pkgdir/etc/shinken/modules/
-  sed -i 's:/tmp/:/var/lib/shinken/retention/:' $pkgdir/etc/modules/*
+  sed -i 's:/tmp/:/var/lib/shinken/retention/:' $pkgdir/etc/shinken/modules/*
   chmod 0640 $pkgdir/etc/shinken/modules/*
 }
 
